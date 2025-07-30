@@ -9,7 +9,9 @@ import ProductScreen from '../screens/products/ProductScreen'
 const Stack = createStackNavigator()
 
 export const StackNavigator = () => (
-  <Stack.Navigator initialRouteName="Home">
+  <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: true, headerStyle:{
+    elevation: 0, shadowColor: 'transparent'
+  } }}>
     <Stack.Screen name="Home" component={HomeScreen} />
     <Stack.Screen name="Profile" component={ProfileScreen} />
     <Stack.Screen name="Products" component={ProductsScreen} />
