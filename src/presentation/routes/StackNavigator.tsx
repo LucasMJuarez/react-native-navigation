@@ -13,7 +13,7 @@ export type RootStackParam = {
     Home: undefined;
     Profile: undefined;
     Products: undefined;
-    Product: { id:number; name: string; price: number };
+    Product: { id:string; name: string; price?: number };
     Settings: undefined;
 }
 
