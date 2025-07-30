@@ -1,13 +1,22 @@
-import { Text, View } from 'react-native'
+import { Pressable, Text, View } from 'react-native';
+import { globalStyles } from '../../themes/theme';
+import { useNavigation } from '@react-navigation/native';
+import { PrimaryButton } from '../../components/shared/PrimaryButton';
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
   return (
-    <View>
-      <Text>
-        Welcome to the Home Screen!
-      </Text>
+    <View style={globalStyles.container}>
+      <PrimaryButton
+        onPress={() => navigation.navigate('Profile' as never)}
+        label="Go to Profile"
+      />
+      <PrimaryButton
+        onPress={() => navigation.navigate('Products' as never)}
+        label="Go to Products"
+      />
     </View>
-  )
-}
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
