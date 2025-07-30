@@ -7,7 +7,17 @@ import ProductScreen from '../screens/products/ProductScreen'
 import SettingsScreen from '../screens/settings/SettingsScreen'
 
 
-const Stack = createStackNavigator()
+
+
+export type RootStackParam = {
+    Home: undefined;
+    Profile: undefined;
+    Products: undefined;
+    Product: { id:number; name: string; price: number };
+    Settings: undefined;
+}
+
+const Stack = createStackNavigator<RootStackParam>()
 
 export const StackNavigator = () => (
   <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: true, headerStyle:{
