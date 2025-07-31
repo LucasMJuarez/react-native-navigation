@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const Tab2Screen = () => {
+const Tab3Screen = () => {
   return (
     <View>
       <Text>
@@ -11,4 +11,4 @@ const Tab2Screen = () => {
   )
 }
 
-export default Tab2Screen
+export default Tab3Screen
