@@ -1,11 +1,13 @@
 import React from 'react'
 import { Text, View } from 'react-native'
+import HamburgerMenu from '../../components/shared/HamburgerMenu'
 
 const Tab1Screen = () => {
   return (
     <View>
+      <HamburgerMenu />
       <Text>
-        Welcome to Tab 1!
+         Tab 1!
       </Text>
     </View>
   )
